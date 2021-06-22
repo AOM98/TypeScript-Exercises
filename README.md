@@ -31,7 +31,15 @@ The following websites are ordered in the sequence that I have accessed and fini
 ### Exercism (on going)
 
 [Exercism](https://exercism.io/my/tracks) is a great website to start learning a language, especially since it includes many community solutions and mentorship when needed.
-The [Type-Script](https://exercism.io/my/tracks/typescript) track is useful
+The [Type-Script](https://exercism.io/my/tracks/typescript) track is useful, I believe it's great for beginners for the points raised above.
+
+|Criteria| Rating (out of 10)   | Comments |
+|---|---|---|
+| **Beginner Friendly (Content)**   |  ? | ? |
+| **User-Friendliness**   |  ? | ? |
+| **Tests and Criteria performed**|? | ? |
+| **Finding Optimal/Different Solution**|? | ? |
+
 . . . *W.I.P* . . .
 
 ### Typescript Exercises - Github (paused)
