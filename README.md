@@ -2,24 +2,6 @@
 
 A repository of solutions to typescript exercises from a Exercism!
 
-- [Exercism](#exercism)
-  - [Overview](#overview)
-  - [Exercises](#exercises)
-  - [Medium Exercises](#medium-exercises)
-    - [Matrix ✅](#matrix-)
-    - [Robot Name](#robot-name)
-    - [Grade School](#grade-school)
-    - [Luhn](#luhn)
-    - [Secret Handshake](#secret-handshake)
-    - [Binary Search](#binary-search)
-    - [Linked List](#linked-list)
-    - [Rational Numbers](#rational-numbers)
-    - [Atbash Cipher](#atbash-cipher)
-    - [Simple Cipher](#simple-cipher)
-    - [Wordy](#wordy)
-  - [Hard Exercises](#hard-exercises)
-    - [List Ops](#list-ops)
-
 ## Overview
 
 I'm currently using the main exercises which are on the "mentored path", these are recommended because they're more likely to hit all the critical spots. The optional exercises will be noted as *(optional)*.
@@ -36,6 +18,29 @@ I will be giving tricks learned or shorter codes under each exercises if i find 
 ### Matrix ✅
 
 Learning outcome:
+it's great to utilize the .split and .map feature on this exercise, they're very rapid and a much cleaner syntax.
+rows: must use Number(x) to convert to a number from string
+
+columns: a little tricky, but after optimizing, we can create a loop to monitor the number of "rows" or our desired "columns", afterwards we get every i'th element of each row, and append it to our columns.
+
+It goes like this: C# is Column Number, R# is Row Number
+|   | C1  | C2|
+|---|---|---|
+|  **R1** | 1  |   2|
+|  **R2** |   3| 4  |
+
+we take 1, 3 on the first loop (i = 0) and append it to our columns list, 
+|   | R1  | R2|
+|---|---|---|
+|  **C1** | 1  |   3|
+|  **C2** |   2| 4  |
+afterwards we take 2, 4 (i = 1) and append it.
+|   | R1  | R2|
+|---|---|---|
+|  **C1** | 1  |   3|
+|  **C2** |   2| 4  |
+
+Just like rotating the table!
 
 ### Robot Name
 

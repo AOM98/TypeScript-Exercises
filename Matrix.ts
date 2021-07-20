@@ -5,29 +5,21 @@ class Matrix {
 
   
   constructor(private matrixString: string) {
-    // Your code here
-    // our rows is simply splitting the input string by the new lines (to generate the rows)
+    // To achieve the rows, we simply split the input string by the new lines (to generate the rows)
     // and then for each generated element, we split by the space
-    this.rows = matrixString.split('\n').map(row => row.split(' ').map(x => +x));
+    this.rows = matrixString.split('\n').map(row => row.split(' ').map(element => Number(element)));
 
     this.columns = this.rowsToColumns(this.rows);
   }
 
   // a function to flip the rows to columns
   private rowsToColumns(inputRows: number[][]): number[][]{
-    let columnResult: number[][] = [[]];
-    // outer loop (outer array of rows)
-    for(let x = 0; x<inputRows.length; x++){
-      let currentRow = inputRows[x];
-      
-      // inner array (inner array of rows)
-      for(let y = 0; y < currentRow.length; y++){
-        // lazy initialization.
-        if (!columnResult[y]) columnResult[y] = []
-          columnResult[y][x] = currentRow[y];
-      }
-    } 
-    console.log(columnResult)
+    let columnResult: number[][] = [];
+    // loop through each row (the outer loop)
+    for (let i = 0; i < inputRows.length; i++) {
+      // append every i'th element of a row to the column list
+      columnResult.push(inputRows.map(row => row[i]));
+    }
     return columnResult;
   }
 }
