@@ -28,7 +28,8 @@ The websites will their own branch (if there is an exception, it'll be mentioned
 
 The following websites are ordered in the sequence that I have accessed and finished them. You will find a ranking on a criteria at the bottom of every website. A table will be provided when more material has been collected.
 
-### Exercism (on going)
+### [Exercism (on going)](https://github.com/AOM98/TypeScript-Exercises/tree/Exercism)
+Move to detailed exercism review [here](https://github.com/AOM98/TypeScript-Exercises/tree/Exercism)
 
 [Exercism](https://exercism.io/my/tracks) is a great website to start learning a language, especially since it includes many community solutions and mentorship when needed.
 The [Type-Script](https://exercism.io/my/tracks/typescript) track is useful, I believe it's great for beginners for the points raised above.
