@@ -24,17 +24,21 @@ rows: must use Number(x) to convert to a number from string
 columns: a little tricky, but after optimizing, we can create a loop to monitor the number of "rows" or our desired "columns", afterwards we get every i'th element of each row, and append it to our columns.
 
 It goes like this: C# is Column Number, R# is Row Number
+
 |   | C1  | C2|
 |---|---|---|
 |  **R1** | 1  |   2|
 |  **R2** |   3| 4  |
 
 we take 1, 3 on the first loop (i = 0) and append it to our columns list, 
+
 |   | R1  | R2|
 |---|---|---|
 |  **C1** | 1  |   3|
-|  **C2** |   2| 4  |
+|  **C2** |   |   |
+
 afterwards we take 2, 4 (i = 1) and append it.
+
 |   | R1  | R2|
 |---|---|---|
 |  **C1** | 1  |   3|
