@@ -46,9 +46,9 @@ afterwards we take 2, 4 (i = 1) and append it.
 
 Just like rotating the table!
 
-### Robot Name
+### Robot Name ✅
 
-*Note: it takes a while when running the test because last test computes every possible value which is $26*26*10*10*10 = 676000$ names*
+*Note: it takes a while when running the test because last test computes every possible value which is 26x26x10x10x10 = 676,000 names*
 
 Learning Outcome:
 
