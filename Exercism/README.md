@@ -30,7 +30,7 @@ It goes like this: C# is Column Number, R# is Row Number
 |  **R1** | 1  |   2|
 |  **R2** |   3| 4  |
 
-we take 1, 3 on the first loop (i = 0) and append it to our columns list, 
+we take 1, 3 on the first loop (i = 0) and append it to our columns list,
 
 |   | R1  | R2|
 |---|---|---|
@@ -47,6 +47,16 @@ afterwards we take 2, 4 (i = 1) and append it.
 Just like rotating the table!
 
 ### Robot Name
+
+*Note: it takes a while when running the test because last test computes every possible value which is $26*26*10*10*10 = 676000$ names*
+
+Learning Outcome:
+
+* Creating and storing **unique** names should be done with **Sets**.
+  * It's intuitive and easy to add and check if element is in a set (using setvariable.add(element) and setvariable.has(element)).
+
+* **Static variable and function**
+  * Using static because we only want one instance in the whole classes, (We want to have one variable holding the name list)
 
 ### Grade School
 
