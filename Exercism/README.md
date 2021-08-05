@@ -46,9 +46,11 @@ afterwards we take 2, 4 (i = 1) and append it.
 
 Just like rotating the table!
 
+---
+
 ### Robot Name ✅
 
-*Note: it takes a while when running the test because last test computes every possible value which is 26x26x10x10x10 = 676,000 names*
+_Note: it takes a while when running the test because last test computes every possible value which is 26x26x10x10x10 = 676,000 names_.
 
 Learning Outcome:
 
@@ -58,8 +60,17 @@ Learning Outcome:
 * **Static variable and function**
   * Using static because we only want one instance in the whole classes, (We want to have one variable holding the name list)
 
-### Grade School
+---
 
+### Grade School ✅
+
+Learning Outcome:
+
+* Using Non-null assertion operator (!) or [Optional Chaining](https://www.freecodecamp.org/news/how-the-question-mark-works-in-javascript/) (?)
+* Keeping variables to not be modified from outside of the module
+  * cloning and sorting
+
+---
 ### Luhn
 
 ### Secret Handshake
