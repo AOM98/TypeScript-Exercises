@@ -71,7 +71,13 @@ Learning Outcome:
   * cloning and sorting
 
 ---
-### Luhn
+
+### Luhn ✅
+
+Learning Outcome:
+
+* simple regex checking
+* clean input before you check length
 
 ### Secret Handshake
 
