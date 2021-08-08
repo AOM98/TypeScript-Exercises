@@ -9,26 +9,19 @@ export default class Luhn {
     // Strings of length 1 or less are not valid.
     if (strippedNumber.length < 2) return false;
 
-    let doubledSum: number = 0,
-      originalSum: number = 0;
-    // checking if number is valid
-    // replace every second number with _
-
-    let counter: number = 0;
-
-    for (let i = strippedNumber.length - 1; i >= 0; i--) {
-      counter++;
-      let convertedNumber = parseInt(strippedNumber.charAt(i));
-      // our numbers to double
-      if (counter % 2 == 0) {
-        let doubledConv = convertedNumber * 2;
-
-        // check if it's double digits or not
-        doubledSum += doubledConv > 9 ? doubledConv - 9 : doubledConv;
-      } else {
-        originalSum += convertedNumber;
-      }
-    }
-    return (originalSum + doubledSum) % 10 == 0 ? true : false;
+    // a very compact solution offered by G-Rath (on exercism)
+    //prettier-ignore
+    return (
+      Array.from(inNumber) // creates an array from the string
+        .reverse() // reverses the string (since Luhn goes from right to left)
+        .filter((char) => char !== " ") // checks for spaces
+        .map(Number) // turn our elements from string into Number type
+        .map((num, i) => (i % 2 !== 0 ? num * 2 : num)) 
+        // with map implementation, using an arrow function we can have the element (num) and the index (i)
+        // we use the index to determine whether we double the number or not
+        
+        .map((num) => (num > 9 ? num - 9 : num)) // we check if the number is bigger than 9 hence, 2 digits if so we subtract 9.
+        .reduce((sum, num) => sum + num, 0) % 10 === 0 // this function reduces the array to a single value instead of an array.
+    );
   }
 }
