@@ -79,6 +79,17 @@ Learning Outcome:
 * simple regex checking
 * clean input before you check length
 
+Optimized Solution:
+
+* Creating Array from string using "Array.from(string)"
+* using *.reverse* to get the reverse of the array (Luhn goes from right to left)
+* using *.filter* to check for spaces
+* using *.map* multiple times to manipulate the array
+  * *.map(Number)* turns the values type to Number from string
+  * *.map((var, i))* gives u an index and the element if used with arrow function
+  * last map is used to check for digits 2 digits you must "-9" according to Luhn's algorithm
+* using *.reduce* to reduce the array values to one sum and comparing it with %10.
+
 ### Secret Handshake
 
 ### Binary Search
