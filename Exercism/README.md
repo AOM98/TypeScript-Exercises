@@ -90,7 +90,14 @@ Optimized Solution:
   * last map is used to check for digits 2 digits you must "-9" according to Luhn's algorithm
 * using *.reduce* to reduce the array values to one sum and comparing it with %10.
 
-### Secret Handshake
+### Secret Handshake ✅
+
+Learning Outcome:
+
+* Converting to binary using "number.toString(base)"
+* Converting string using rest parameters.
+
+I believe readability is better than shrinking and optimizing the for loop (optimized result won't worth it when comparing added efficiency to reduced readability)
 
 ### Binary Search
 
