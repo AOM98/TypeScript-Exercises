@@ -101,6 +101,10 @@ I believe readability is better than shrinking and optimizing the for loop (opti
 
 ### Binary Search
 
+Learning Outcome:
+
+* checking unsorted array, it's better to iterate since it gives you O(n) instead of sorting and comparing which gives you O(nlogn)
+
 ### Linked List
 
 ### Rational Numbers
