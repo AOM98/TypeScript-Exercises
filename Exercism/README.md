@@ -99,13 +99,18 @@ Learning Outcome:
 
 I believe readability is better than shrinking and optimizing the for loop (optimized result won't worth it when comparing added efficiency to reduced readability)
 
-### Binary Search
+### Binary Search ✅
 
 Learning Outcome:
 
 * checking unsorted array, it's better to iterate since it gives you O(n) instead of sorting and comparing which gives you O(nlogn)
 
-### Linked List
+### Linked List ✅
+
+Learning Outcome:
+
+* classic linked list implementation
+* usage of classes
 
 ### Rational Numbers
 
