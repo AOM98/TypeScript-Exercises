@@ -114,7 +114,12 @@ Learning Outcome:
 
 ### Rational Numbers
 
-### Atbash Cipher
+### Atbash Cipher ✅
+
+Learning Outcome:
+
+* Using regex to filter the string, keeping numbers and alphabet
+* Using unicode to create the cipher
 
 ### Simple Cipher
 
